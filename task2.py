@@ -1,4 +1,5 @@
 username = input("what is your username?")
+print(f"Welcome to LeedsBank's savings calculator {username}!")
 user_input = input("how much money are you saving per month?")
 try:
     Usave = float(user_input)
@@ -12,4 +13,3 @@ try:
 except ValueError:
     print("Invalid input")
 
- 
