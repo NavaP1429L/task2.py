@@ -1,8 +1,12 @@
+user_input = input("how much money are you saving per month?")
 try:
-    Usave = float(input("How much money are you saving per month? "))
+    Usave = float(user_input)
     Yearsave = Usave * 12
-    interestsave = Yearsave * 1.008  # 0.8% interest
-    print(f"Total savings for the year: £{Yearsave:.2f}")
-    print(f"Total with interest: £{interestsave:.2f}")
+    interestsave = Yearsave * 1.008
+    if Yearsave.is_integer():
+        print(int(Yearsave))
+    else:
+        print(f"{Yearsave:.2f}")
+    print(f"£{interestsave:.2f}")
 except ValueError:
-    print("Please enter a valid number.")
+    print("Invalid input")
