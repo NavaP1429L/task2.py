@@ -1,3 +1,4 @@
+username = input("what is your username?")
 user_input = input("how much money are you saving per month?")
 try:
     Usave = float(user_input)
@@ -10,4 +11,5 @@ try:
     print(f"£{interestsave:.2f}")
 except ValueError:
     print("Invalid input")
+
  
