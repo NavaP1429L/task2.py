@@ -11,5 +11,5 @@ try:
         print(f"{Yearsave:.2f}")
     print(f"£{interestsave:.2f}")
 except ValueError:
-    print("Invalid input")
+    print("Invalid amount")
 
